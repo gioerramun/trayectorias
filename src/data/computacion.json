@@ -1,0 +1,7 @@
+[
+	{ "name": "Matemáticas", "previasExam": [], "previasApproved": [] },
+	{ "name": "Física", "previasExam": ["Matemáticas"], "previasApproved": [] },
+	{ "name": "Química", "previasExam": [], "previasApproved": ["Matemáticas"] },
+	{ "name": "Historia", "previasExam": [], "previasApproved": [] },
+	{ "name": "Inglés", "previasExam": ["Historia"], "previasApproved": [] }
+]
