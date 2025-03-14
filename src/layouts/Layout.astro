@@ -15,17 +15,50 @@ import '../styles/global.css';
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro Basics</title>
 	</head>
-	<body>
+	<body class="lg:px-[10rem] md:px-[5rem] px-[2rem] py-[2rem]">
 		<slot />
 	</body>
 </html>
 
-<style>
+<style is:global>
 	@import "tailwindcss";
 	html,
 	body {
+		background-color: #343633;
+		font-family: -apple-system, BlinkMacSystemFont, "SF Pro", Inter, sans-serif;
 		margin: 0;
 		width: 100%;
 		height: 100%;
 	}
+	h1 {
+		font-weight: 900;
+		font-size: 3rem;
+	}
+	h2 {
+		font-weight: 700;
+		font-size: 2.5rem;
+	}
+	h3 {
+		font-weight: 600;
+		font-size: 2.25rem;
+	}
+	h4 {
+		font-weight: 500;
+		font-size: 2rem;
+	}
+	h5 {
+		font-weight: 400;
+		font-size: 1.5rem;
+	}
+	h6 {
+		font-weight: 400;
+		font-size: 1.25rem;
+	}
 </style>
+
+
+<!-- seasalt f9f9f9
+blackolive 343633
+amethyst 7d70ba 
+https://coolors.co/f9f9f9-343633-7d70ba
+-->
