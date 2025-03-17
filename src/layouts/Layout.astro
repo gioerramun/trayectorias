@@ -13,22 +13,23 @@ import '../styles/global.css';
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>Trayectorias Fing</title>
 	</head>
-	<body class="lg:px-[10rem] md:px-[5rem] px-[2rem] py-[2rem]">
-		<slot />
+	<body class="min-h-screen border border-red-500">
+		<main class="min-h-screen -z-10 lg:px-[10rem] md:px-[5rem] px-[2rem] py-[2rem]">	
+			<slot />
+		</main>
 	</body>
 </html>
 
 <style is:global>
 	@import "tailwindcss";
-	html,
-	body {
-		background-color: #343633;
+	main {
+		background-image: linear-gradient(to right bottom, #050505, #14112b, #1b174d, #231b70, #311c94);
+	}
+	html, body {
 		font-family: -apple-system, BlinkMacSystemFont, "SF Pro", Inter, sans-serif;
-		margin: 0;
-		width: 100%;
-		height: 100%;
+		color: aliceblue;
 	}
 	h1 {
 		font-weight: 900;
@@ -51,9 +52,10 @@ import '../styles/global.css';
 		font-size: 1.5rem;
 	}
 	h6 {
-		font-weight: 400;
-		font-size: 1.25rem;
+		/* comodin */
 	}
+
+	
 </style>
 
 

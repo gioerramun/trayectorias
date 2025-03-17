@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import computacion from "../data/computacion.json";
+import Button from "./button.tsx";
 
 //------------INTERFACE PARA MATERIAS
 interface Options {
 	previasExam: string[];
 	previasApproved: string[];
   }
-
 
 interface Subject {
 	name: string;
@@ -15,35 +15,6 @@ interface Subject {
 	previasApproved: string[];
 	options?: Options[];
 }
-
-//------------BUTTON COMPONENT
-interface ButtonProps {
-	subject: Subject;
-	status: string;
-	handleToggle: (subjectName: string, newStatus: string) => void;
-	disabled: boolean;
-}
-
-const Button: React.FC<ButtonProps> = ({ subject, status, handleToggle, disabled }) => {
-	const handleClick = () => {
-		if (!disabled) {
-			const newStatus = status === "nothing" ? "course" : status === "course" ? "exam" : "nothing";
-			handleToggle(subject.name, newStatus);
-		}
-	};
-
-	return (
-		<button
-			onClick={handleClick}
-			disabled={disabled}
-			className={`border rounded-lg p-2 text-black font-[700] transition-all ${
-				disabled
-					? "bg-gray-300"
-					: status === "nothing" ? "bg-red-200" : status === "course" ? "bg-yellow-200" : "bg-green-200"}`}>
-			{subject.name}
-		</button>
-	);
-};
 
 //------------PREVIAS COMPONENT
 const Previas: React.FC = () => {
@@ -75,11 +46,12 @@ const Previas: React.FC = () => {
 	  };
 
 	return (
-		<div>
-			<div className="border flex flex-col gap-2">
+		<div className="flex flex-col gap-4">
 			{[...Array(8).keys()].map((i) => (
-        		<div key={i + 1} id={(i + 1).toString()} className="border rounded-2xl p-5 w-full flex flex-wrap gap-5 items-center justify-center">
-          		{subjects
+        		<article key={i + 1} id={(i + 1).toString()} className="border rounded-2xl p-4 w-full flex lg:flex-row md:flex-row flex-col gap-1 items-center">
+					<h6 className="font-bold">{i + 1}º Semestre</h6>
+					<div className="flex-1 flex flex-wrap justify-center gap-5">
+					{subjects
             		.filter((subject) => subject.semester === i + 1)
             		.map((subject) => (
               			<Button
@@ -88,10 +60,11 @@ const Previas: React.FC = () => {
                 			status={statuses[subject.name] || "nothing"}
                 			handleToggle={handleToggle}
                 			disabled={!isEnabled(subject)}
-              			/>))}
-        		</div>
+              			/>
+						))}
+					</div>
+        		</article>
       		))}
-			</div>
 		</div>
 	);
 };

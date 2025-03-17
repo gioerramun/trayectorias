@@ -1,11 +1,51 @@
 ---
-import Welcome from '../components/welcome.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-	<Welcome />
+	<header class="flex flex-col">
+		<h1>Trayectorias Fing <em class="text-red-400 text-sm"> Beta 1</em></h1>
+		<p>Web de seguimiento de previas de todas las carreras de la FING.</p>
+		<p>Código Open Source con repositorio en: LINK GITHUB</p>
+	</header>
+	<section class="grid grid-cols-1 md:grid-cols-2 gap-4 p-5">
+		<article>
+			<a href="/computacion"><h4>Ingeniería en Computacion</h4></a>
+		</article>
+		<article>
+			<a class="pointer-events-none" href="/"><h4>Ingeniería Eléctrica<br><em class="text-blue-400 text-sm"> Próximamente...</em></h4></a>
+		</article>
+		<article>
+			<a class="pointer-events-none" href="/"><h4>Ingeniería Química<br><em class="text-blue-400 text-sm"> Próximamente...</em></h4></a>
+		</article>
+		<article>
+			<a class="pointer-events-none" href="/"><h4>Ingeniería Fisico-Matemático<br><em class="text-blue-400 text-sm"> Próximamente...</em></h4></a>
+		</article>
+		<article>
+			<a class="pointer-events-none" href="/"><h4>Ingeniería Civil<br><em class="text-blue-400 text-sm"> Próximamente...</em></h4></a>
+		</article>
+		<article>
+			<a class="pointer-events-none" href="/"><h4>Ingeniería Producción<br><em class="text-blue-400 text-sm"> Próximamente...</em></h4></a>
+		</article>
+		<article>
+			<a class="pointer-events-none" href="/"><h4>Ingeniería Mecánica<br><em class="text-blue-400 text-sm"> Próximamente...</em></h4></a>
+		</article>
+	</section>
 </Layout>
+
+<style>
+	article {
+		background-color: rgb(26, 33, 45, 0.5);
+		border: 1px solid #2d3748;
+		backdrop-filter: blur(10px);
+		border-radius: 0.75rem;
+	}
+
+	article > a {
+		color: #f7fafc;
+		display: block;
+		height: 100%;
+		width: 100%;
+		padding: 1rem;
+	}
+</style>
