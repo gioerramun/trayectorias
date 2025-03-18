@@ -10,10 +10,10 @@ import code from '../assets/code.svg';
 		<h1>Trayectorias Fing<em class="text-red-400 text-sm"> Beta 1</em></h1>
 		<p>Web Open Source de seguimiento de previas de todas las carreras de la FING.</p>
 		<nav>
-			<ul class="flex flex-row text-lg font-semibold">
-				<li class="px-8"><a target="_blank" href="https://github.com/gioerramun/trayectorias">Código<img src={code.src} alt="form icon"></a></li>
-				<li class="px-8"><a target="_blank" href=https://github.com/gioerramun/trayectorias/issues/new">Bugs<img src={bug.src} alt="form icon"></a></li>
-				<li class="px-8"><a target="_blank" href="https://forms.gle/7eNbjansRJ1S4mtq9">Informar cambios<img src={form.src} alt="form icon"></a></li>
+			<ul class="flex flex-row text-lg font-semibold lg:text-lg md:text-md text-sm">
+				<li><a target="_blank" href="https://github.com/gioerramun/trayectorias">Código<img src={code.src} alt="form icon"></a></li>
+				<li><a target="_blank" href=https://github.com/gioerramun/trayectorias/issues/new">Bugs<img src={bug.src} alt="form icon"></a></li>
+				<li><a target="_blank" href="https://forms.gle/7eNbjansRJ1S4mtq9">Informar cambios<img src={form.src} alt="form icon"></a></li>
 			</ul>
 		</nav>
 	</header>
@@ -62,6 +62,11 @@ import code from '../assets/code.svg';
 	}
 	li {
 		border-bottom: 1px solid rgb(247, 250, 252);
+		padding: 0 1.5rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		line-height: 1.25rem;
 	}
 	li > a {
 		display: flex;
