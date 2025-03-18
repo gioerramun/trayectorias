@@ -15,19 +15,28 @@ import '../styles/global.css';
 		<meta name="generator" content={Astro.generator} />
 		<title>Trayectorias Fing</title>
 	</head>
-	<body class="min-h-screen border border-red-500">
-		<main class="min-h-screen -z-10 lg:px-[10rem] md:px-[5rem] px-[2rem] py-[2rem]">	
-			<slot />
-		</main>
+	<body class="min-h-screen h-full">
+		<div class="root min-h-screen h-full">
+			<main class=" -z-10 lg:px-[10rem] md:px-[5rem] px-[2rem] py-[2rem] space-y-3">	
+				<slot />
+			</main>
+			<footer class="text-center text-gray-400 py-4 pb-10 flex justify-center">
+				<span class="flex flex-wrap justify-center border p-1 px-10 rounded-full">
+					<p class="">Trayectorias Fing <em>Beta 1</em> |</p>
+					<p>| Desarrollado por <span class="underline hover:font-[500]"><a target="_blank" href="https://github.com/gioerramun">Gianfranco Erramún</a></span> |</p>
+					<p>| Open Source</p>
+				</span>
+			</footer>
+		</div>
 	</body>
 </html>
 
 <style is:global>
 	@import "tailwindcss";
-	main {
+	.root {
 		background-image: linear-gradient(to right bottom, #050505, #14112b, #1b174d, #231b70, #311c94);
 	}
-	html, body {
+	body {
 		font-family: -apple-system, BlinkMacSystemFont, "SF Pro", Inter, sans-serif;
 		color: aliceblue;
 	}

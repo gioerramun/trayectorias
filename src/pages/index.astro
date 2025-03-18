@@ -1,12 +1,21 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import form from '../assets/form.svg';
+import bug from '../assets/bug.svg';
+import code from '../assets/code.svg';
 ---
 
 <Layout>
-	<header class="flex flex-col">
-		<h1>Trayectorias Fing <em class="text-red-400 text-sm"> Beta 1</em></h1>
-		<p>Web de seguimiento de previas de todas las carreras de la FING.</p>
-		<p>Código Open Source con repositorio en: LINK GITHUB</p>
+	<header class="flex flex-col gap-4">
+		<h1>Trayectorias Fing<em class="text-red-400 text-sm"> Beta 1</em></h1>
+		<p>Web Open Source de seguimiento de previas de todas las carreras de la FING.</p>
+		<nav>
+			<ul class="flex flex-row text-lg font-semibold">
+				<li class="px-8"><a target="_blank" href="https://github.com/gioerramun/trayectorias">Código<img src={code.src} alt="form icon"></a></li>
+				<li class="px-8"><a target="_blank" href=https://github.com/gioerramun/trayectorias/issues/new">Bugs<img src={bug.src} alt="form icon"></a></li>
+				<li class="px-8"><a target="_blank" href="https://forms.gle/7eNbjansRJ1S4mtq9">Informar cambios<img src={form.src} alt="form icon"></a></li>
+			</ul>
+		</nav>
 	</header>
 	<section class="grid grid-cols-1 md:grid-cols-2 gap-4 p-5">
 		<article>
@@ -28,7 +37,10 @@ import Layout from '../layouts/Layout.astro';
 			<a class="pointer-events-none" href="/"><h4>Ingeniería Producción<br><em class="text-blue-400 text-sm"> Próximamente...</em></h4></a>
 		</article>
 		<article>
-			<a class="pointer-events-none" href="/"><h4>Ingeniería Mecánica<br><em class="text-blue-400 text-sm"> Próximamente...</em></h4></a>
+			<a class="pointer-events-none" href="/"><h4>Ingeniería Industrial Mecánica<br><em class="text-blue-400 text-sm"> Próximamente...</em></h4></a>
+		</article>
+		<article>
+			<a class="pointer-events-none" href="/"><h4>Ingeniería en Sistemas de Comunicación<br><em class="text-blue-400 text-sm"> Próximamente...</em></h4></a>
 		</article>
 	</section>
 </Layout>
@@ -47,5 +59,16 @@ import Layout from '../layouts/Layout.astro';
 		height: 100%;
 		width: 100%;
 		padding: 1rem;
+	}
+	li {
+		border-bottom: 1px solid rgb(247, 250, 252);
+	}
+	li > a {
+		display: flex;
+		flex-direction: row;
+		gap: 10px;
+	}
+	li:hover {
+		font-weight: 800;
 	}
 </style>
