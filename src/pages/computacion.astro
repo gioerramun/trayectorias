@@ -1,12 +1,20 @@
 ---
 import Layout from "../layouts/Layout.astro"
 import Previas from "../components/previas"
+
+import leftArrow from "../assets/leftArrow.svg"
 ---
 <Layout>
-		<h1>Computación</h1>
-		<p>Sección de Ingeniería en Computación. Informar errores.</p>
-		<div class="w-full flex justify-center">
-			<button class="border py-2 px-4 rounded-xl"><a href="/computacion">Reiniciar</a></button>
-		</div>
+		<header>
+			<nav class="flex flex-row items-center gap-2">
+				<a href="/"><img src={leftArrow.src} alt="left arrow svg"></a><h1 class="leading-none">Computación</h1>
+			</nav>
+			<div class="w-full flex flex-row justify-between items-center">
+				<p>Sección de Ingeniería en Computación. Informar errores.</p>
+				<button class="border py-2 px-4 rounded-xl"><a href="/computacion">Reiniciar</a></button>
+			</div>
+		</header>
+		
+		
 		<Previas client:load/>
 </Layout>

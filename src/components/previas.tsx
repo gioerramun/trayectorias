@@ -48,7 +48,7 @@ const Previas: React.FC = () => {
 	return (
 		<div className="flex flex-col gap-4">
 			{[...Array(8).keys()].map((i) => (
-        		<article key={i + 1} id={(i + 1).toString()} className="border rounded-2xl p-4 w-full flex lg:flex-row md:flex-row flex-col gap-1 items-center">
+        		<article key={i + 1} id={(i + 1).toString()} className="border rounded-2xl p-3 w-full flex lg:flex-row md:flex-row flex-col gap-1 items-center">
 					<h6 className="font-bold">{i + 1}º Semestre</h6>
 					<div className="flex-1 flex flex-wrap justify-center gap-5">
 					{subjects
