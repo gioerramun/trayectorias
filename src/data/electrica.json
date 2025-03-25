@@ -1,0 +1,41 @@
+[
+    { "name": "Cálculo Diferencial e Integral en Una Variable", "semester": 1, "previasExam": [], "previasApproved": [] },
+    { "name": "Geometría y Álgebra Lineal 1", "semester": 1, "previasExam": [], "previasApproved": [] },
+    { "name": "Física 1", "semester": 1, "previasExam": [], "previasApproved": [] },
+    { "name": "Taller de Introducción a la Ingeniería Eléctrica – Tallerine", "semester": 1, "previasExam": [], "previasApproved": [] },
+    
+    { "name": "Cálculo Diferencial e Integral en Varias Variables", "semester": 2, "previasExam": [], "previasApproved": [] },
+    { "name": "Geometría y Álgebra Lineal 2", "semester": 2, "previasExam": [], "previasApproved": [] },
+    { "name": "Física 2", "semester": 2, "previasExam": [], "previasApproved": [] },
+    { "name": "Programación 1", "semester": 2, "previasExam": [], "previasApproved": [] },
+    
+    { "name": "Cálculo Vectorial", "semester": 3, "previasExam": [], "previasApproved": [] },
+    { "name": "Probabilidad y Estadística", "semester": 3, "previasExam": [], "previasApproved": [] },
+    { "name": "Física 3", "semester": 3, "previasExam": [], "previasApproved": [] },
+    { "name": "Mecánica Newtoniana", "semester": 3, "previasExam": [], "previasApproved": [] },
+    { "name": "Física Experimental 1", "semester": 3, "previasExam": [], "previasApproved": [] },
+    
+    { "name": "Introducción a las Ecuaciones Diferenciales", "semester": 4, "previasExam": [], "previasApproved": [] },
+    { "name": "Electromagnetismo", "semester": 4, "previasExam": [], "previasApproved": [] },
+    { "name": "Física Experimental 2", "semester": 4, "previasExam": [], "previasApproved": [] },
+    { "name": "Teoría de Circuitos", "semester": 4, "previasExam": [], "previasApproved": [] },
+    { "name": "Diseño Lógico", "semester": 4, "previasExam": [], "previasApproved": [] },
+    
+    { "name": "Funciones de Variable Compleja", "semester": 5, "previasExam": [], "previasApproved": [] },
+    { "name": "Señales y Sistemas", "semester": 5, "previasExam": [], "previasApproved": [] },
+    { "name": "Introducción a los Microprocesadores", "semester": 5, "previasExam": [], "previasApproved": [] },
+    { "name": "Programación para Ingeniería Eléctrica", "semester": 5, "previasExam": [], "previasApproved": [] },
+    { "name": "Electrónica Fundamental", "semester": 5, "previasExam": [], "previasApproved": [] },
+    
+    { "name": "Métodos Numéricos", "semester": 6, "previasExam": [], "previasApproved": [] },
+    { "name": "Sistemas y Control", "semester": 6, "previasExam": [], "previasApproved": [] },
+    { "name": "Taller Fourier", "semester": 6, "previasExam": [], "previasApproved": [] },
+    { "name": "Señales Aleatorias y Modulación", "semester": 6, "previasExam": [], "previasApproved": [] },
+    { "name": "Redes de Datos 1", "semester": 6, "previasExam": [], "previasApproved": [] },
+    
+    { "name": "Medidas Eléctricas", "semester": 7, "previasExam": [], "previasApproved": [] },
+    { "name": "Electrotecnia", "semester": 7, "previasExam": [], "previasApproved": [] },
+    { "name": "Opcional Básica", "semester": 7, "previasExam": [], "previasApproved": [] },
+   
+    { "name": "Instalaciones Eléctricas", "semester": 8, "previasExam": [], "previasApproved": [] }
+]
